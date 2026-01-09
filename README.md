@@ -1,11 +1,11 @@
-# 🛡️ Password Strength Analyzer (C)
+## 🛡️ Password Strength Analyzer (C)
 
 A simple, command-line tool written in C that evaluates password complexity based on length, character variety, and common weak patterns. The results are displayed with high-visibility, color-coded strength levels.
 
-### ✔️ Password Requirements
-* **Enforced Input:** Minimum length of 8 characters.
+## ✔️ Password Requirements
+Minimum length of 8 characters.
 
-### ✔️ Strength Evaluation Logic
+## ✔️ Strength Evaluation Logic
 The analyzer calculates a score based on the following criteria:
 
 | Category | Criterion | Score Impact |
@@ -32,7 +32,7 @@ Scores are mapped to colored terminal output for immediate readability:
 
 The following screenshot demonstrates the analyzer in action, showcasing the logic for different complexity levels and terminal color output:
 
-![Password Analyzer Terminal Output](screenshot.jpg)
+![Password Analyzer Terminal Output](screenshot.jpeg)
 
 ---
 
