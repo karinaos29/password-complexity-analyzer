@@ -12,7 +12,6 @@ int containsDigits(char* string, int size, int* score, bool* contains);
 int containsSpecial(char* string, int size, int* score);
 int consecutives(char* string, int size, int* score);
 
-
 // A complexity score 
 //-------------------
 // 0-3 weak
@@ -21,25 +20,6 @@ int consecutives(char* string, int size, int* score);
 // 8+ very strong
 //-------------------
 
-/*
-Contains lowercase -> +1
-Contains uppercase -> +1
-Contains digits -> +1
-Contains special characters -> +1
-Longer than 8 -> +1
-Longer than 12 -> +2
-Max from this section: 4 points
-*/
-
-/*
-Weak patterns:
-Contains “password” → −2
-Contains “qwerty” → −1
-Contains “111” or “aaa” → −1
-All characters the same → −2
-Only digits → −1
-Only letters → −1
-*/
 void readPassword(char* string, int capacity) {
     bool isValid = false;
 
