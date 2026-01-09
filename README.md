@@ -2,24 +2,24 @@
 
 A simple, command-line tool written in C that evaluates password complexity based on length, character variety, and common weak patterns. The results are displayed with high-visibility, color-coded strength levels.
 
-## ✔️ Password Requirements
-Minimum length of 8 characters.
+## Password Requirements - Minimum length of 8 characters.
 
-## ✔️ Strength Evaluation Logic
+## Strength Evaluation Logic
 The analyzer calculates a score based on the following criteria:
 
-| Category | Criterion | Score Impact |
-| :--- | :--- | :--- |
-| **Variety** | Contains Lowercase | +1 |
-| **Variety** | Contains Uppercase | +1 |
-| **Variety** | Contains Digits | +1 |
-| **Variety** | Contains Special Characters | +1 |
-| **Bonus** | Length > 9 | +1 |
-| **Bonus** | Length > 12 | +2 |
-| **Penalty** | Consecutive Repeated Chars (>4) | -1 |
-| **Penalty** | Single-type only (e.g., only digits) | -1 |
 
-### ✔️ Visual Feedback
+** Contains Lowercase -> +1 
+** Contains Uppercase -> +1 
+** Contains Digits -> +1 
+** Contains Special Characters -> +1 
+** Length > 9 -> +1 
+** Length > 12 -> +2 
+
+Penalties:
+** Consecutive Repeated Chars (>4) -> -1 
+** Single-type only (e.g. only digits) -> -1 
+
+### Visual Feedback
 Scores are mapped to colored terminal output for immediate readability:
 * <span style="color:red">**WEAK**</span> (Score ≤ 2)
 * <span style="color:yellow">**MEDIUM**</span> (Score 3–4)
@@ -36,7 +36,7 @@ The following screenshot demonstrates the analyzer in action, showcasing the log
 
 ---
 
-## 📦 File Structure
+## File Structure
 ```text
 password_analyzer/
 │── main.c          # Core program logic
