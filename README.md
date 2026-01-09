@@ -8,16 +8,16 @@ A simple, command-line tool written in C that evaluates password complexity base
 The analyzer calculates a score based on the following criteria:
 
 
-Contains Lowercase -> +1 
-Contains Uppercase -> +1 
-Contains Digits -> +1 
-Contains Special Characters -> +1 
-Length > 9 -> +1 
-Length > 12 -> +2 
-
-Penalties:
-** Consecutive Repeated Chars (>4) -> -1 
-** Single-type only (e.g. only digits) -> -1 
+Contains Lowercase -> +1 <br />
+Contains Uppercase -> +1 <br />
+Contains Digits -> +1 <br />
+Contains Special Characters -> +1 <br />
+Length > 9 -> +1 <br />
+Length > 12 -> +2 <br />
+<br />
+Penalties: <br />
+** Consecutive Repeated Chars (>4) -> -1 <br />
+** Single-type only (e.g. only digits) -> -1 <br />
 
 ### Visual Feedback
 Scores are mapped to colored terminal output for immediate readability:
