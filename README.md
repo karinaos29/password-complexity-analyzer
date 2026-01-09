@@ -16,8 +16,8 @@ Length > 9 -> +1 <br />
 Length > 12 -> +2 <br />
 <br />
 Penalties: <br />
-** Consecutive Repeated Chars (>4) -> -1 <br />
-** Single-type only (e.g. only digits) -> -1 <br />
+Consecutive Repeated Chars (>4) -> -1 <br />
+Single-type only (e.g. only digits) -> -1 <br />
 
 ### Visual Feedback
 Scores are mapped to colored terminal output for immediate readability:
