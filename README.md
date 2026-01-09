@@ -8,12 +8,12 @@ A simple, command-line tool written in C that evaluates password complexity base
 The analyzer calculates a score based on the following criteria:
 
 
-** Contains Lowercase -> +1 
-** Contains Uppercase -> +1 
-** Contains Digits -> +1 
-** Contains Special Characters -> +1 
-** Length > 9 -> +1 
-** Length > 12 -> +2 
+Contains Lowercase -> +1 
+Contains Uppercase -> +1 
+Contains Digits -> +1 
+Contains Special Characters -> +1 
+Length > 9 -> +1 
+Length > 12 -> +2 
 
 Penalties:
 ** Consecutive Repeated Chars (>4) -> -1 
